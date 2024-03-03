@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(81, 182, 192);
+}
+
+.header{
+    position: absolute;
+    justify-content: space-around;
+    top: 15%;
+    left: 41%;
+    color: brown;
+    font-weight: 900;
+    font-size: 25px;
+    /* padding-top: 15%; */
+    padding-bottom: 1%;
+}
+.container{
+    background-color: rgb(57, 50, 44);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: min(90%, 31.25rem);
+    padding: 3.5rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 1.9rem 3.5rem rgb(3, 3, 3);
+
+}
+.display-time{
+    position: relative;
+    width: 90%;
+    background-color: rgb(243, 243, 243);
+    left: 5%;
+    right: 5%;
+    padding: 1rem 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgb(183, 183, 129);
+    color: green;
+
+}
+
+.button{
+    width: 80%;
+    margin: 3.8rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button button{
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(234, 184, 109);
+    color: rgb(236, 179, 9);
+    font-family: monospace;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#timer-start,
+#timer-pause,
+#timer-reset{
+    background-color: beige;
+}
+
+#timer-start:hover{
+    transform: scale(1.1);
+    color: rgb(235, 218, 28);
+    background-color: rgba(218, 96, 52, 0.699);
+    transition-duration: 300ms;
+}
+#timer-pause:hover{
+    transform: scale(1.1);
+    background-color: rgb(135, 120, 60);
+    color: greenyellow;
+    transition-duration: 300ms;
+}
+#timer-reset:hover{
+    transform: scale(1.1);
+    background-color: rgb(135, 60, 62);
+    color: rgb(225, 14, 14);
+    transition-duration: 300ms;
+}
